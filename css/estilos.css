@@ -37,7 +37,55 @@ body{
     height: 100%;
     background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/ilya-lix-4l5fsRjJqLM-unsplash.jpg');
     background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 39%, 100% 76%, 68% 100%, 32% 100%, 0 78%, 0 43%, 0 0);
+    z-index: -1;
+}
+
+.hero2{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/pina-messina-qQKv7r1BaRw-unsplash.jpg');
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 39%, 100% 76%, 68% 100%, 32% 100%, 0 78%, 0 43%, 0 0);
+    z-index: -1;
+}
+
+.hero3{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/victoria-nazaruk-bbyoN-AT_4M-unsplash.jpg');
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 39%, 100% 76%, 68% 100%, 32% 100%, 0 78%, 0 43%, 0 0);
     z-index: -1;
 }
 
@@ -168,7 +216,6 @@ body{
     background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
-
 .knowledge__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,14 +266,17 @@ body{
 }
 
 .price__element--best{
+    height: 400px;
     width: 370px;
     padding: 60px 40px;
-    background-color: #FF7143;
+    background-color: #cf5d37;
     --color-plan: rgb(255 255 255 / 75%);
     --color-price: #fff;
     --bg-cta: #9F3919;
     --color-cta: #FFF;
     --color-items: #fff;
+       margin-left: auto;
+       margin-right: auto;
 }
 
 
