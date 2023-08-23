@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/contacto.css">
-    <script src="/js/contacto.js" async></script>
+
 </head>
 <body>
     <header class="hero3"> 
@@ -72,6 +72,48 @@
             <img src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-whatsapp-phone-icon-png-image_6315989.png" alt="Icono de WhatsApp"> Chat en WhatsApp
         </a>
     </section>
+    <section class="contact-form-section">
+        <div class="container">
+            <!-- Detalle -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Formulario de mensaje</h1>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="txtNombreContacto" id="txtNombreContacto" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="txtEmailContacto" id="txtEmailContacto" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="txtMensajeContacto" id="txtMensajeContacto" class="form-control" placeholder="Mensaje"></textarea>
+                        </div>
+                        <button id="btnGuardar" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                
+                <!-- Lista -->
+                <div class="col-md-8">
+                    <h2>Listado de Contactos</h2>
+                    <table id="contactTable" class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                                <th>Mensaje</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </section>
+    
 </main>
 
 <!-- ... Resto del código ... -->
@@ -122,6 +164,16 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+
+
+        <!-- Scripts -->
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+        <script src="js/firebase.config.js"></script>
+        <script src="js/contacto.js"></script> <!-- Asegúrate de cambiar el nombre de tu archivo JS a "Contactos.js" -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 
     
 </body>
